@@ -1,8 +1,10 @@
+<?php /* Template Name: Full Width */ ?>
+
 <?php get_header(); ?>
 
 <div class="wrapper"><!-- closed in footer.php -->
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-12">
 			<div class="content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	                <div <?php post_class(); ?>>
@@ -24,9 +26,6 @@
 
 			</div>
 			
-		</div>
-		<div class="col-md-4">
-			<?php get_sidebar(); ?>
 		</div>
 	</div>
 
