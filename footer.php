@@ -1,5 +1,5 @@
 	<div id="footer">
-		<div class="container">
+		<div class="row">
 			<div class="col-md-12">
 				<p>Copyright &copy; 2015 <?php echo get_bloginfo ( 'name' );  ?></p>
 			</div>
