@@ -101,18 +101,23 @@ a:hover {
 	min-width: 100px;
 }
 
-.avatar{
+.avatar {
 	border-radius: 50%;
   height: 20px;
   width: 20px;
 }
 
-.comment.media-body{
+.comment.media-body {
 	left: -30px;
 	position: relative;
 }
 
-.comment.media-body.media-heading{
+.comment.media-body.media-heading {
 	left: 30px;
 	position: relative;
+}
+
+.comment h4 span {
+	font-size: 12px;
+	color: #C0C0C0;
 }

@@ -15,7 +15,7 @@
 
 	                    <p class="excerpt"><?php the_excerpt(); ?></p>
 
-	                    <p class="nocomment"><?php echo get_comments_number(); ?> Comments</p>
+	                    <a href="<?php the_permalink(); ?>#comments"<p class="nocomment"><?php echo get_comments_number(); ?> Comments</p></a>
 
 	                    <hr/>
 	                </div><!-- /.post_class -->

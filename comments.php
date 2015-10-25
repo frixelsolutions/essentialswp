@@ -21,4 +21,9 @@
     <?php endif; ?>
 
     <?php comment_form(); ?>
+
+
+
+
+
 </div><!-- #comments .comments-area -->
