@@ -12,15 +12,20 @@
 	                    <p class="meta">
 	                        Posted on <?php the_time('F jS, Y') ?>
 	                    </p>
+	                    <hr/>
 
 	                    <?php the_content(); ?>
 
-	                    <hr/>
+	                    
 
 	                </div><!-- /.post_class -->
 	            <?php endwhile; endif; ?>
 
+	            <h3><?php echo get_comments_number(); ?> Comments</h3><hr/>
+
 	            <?php comments_template(); ?>
+
+	            <hr/>
 
 			</div>
 			

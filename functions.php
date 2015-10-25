@@ -66,7 +66,15 @@ if (!function_exists('essentialswp_comment')) :
                                         'Post author',
                                         'essentialswp'
                                     ) . '</span> ' : ''); ?>
-                            </h4>
+                            <span><?php printf('<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
+                                            esc_url(get_comment_link($comment->comment_ID)),
+                                            get_comment_time('c'),
+                                            sprintf(
+                                                __('%1$s at %2$s', 'essentialswp'),
+                                                get_comment_date(),
+                                                get_comment_time()
+                                            )
+                                        ); ?></span></h4>
 
                             <?php if ('0' == $comment->comment_approved) : ?>
                                 <p class="comment-awaiting-moderation"><?php _e(
@@ -75,18 +83,8 @@ if (!function_exists('essentialswp_comment')) :
                                 ); ?></p>
                             <?php endif; ?>
 
-                            <?php comment_text(); ?>
-                            <p class="meta">
-                                <?php printf('<a href="%1$s"><time datetime="%2$s">%3$s</time></a>',
-                                            esc_url(get_comment_link($comment->comment_ID)),
-                                            get_comment_time('c'),
-                                            sprintf(
-                                                __('%1$s at %2$s', 'essentialswp'),
-                                                get_comment_date(),
-                                                get_comment_time()
-                                            )
-                                        ); ?>
-                            </p>
+                            <?php comment_text(); ?><hr/>
+
                             <p class="reply">
                                 <?php comment_reply_link( array_merge($args, array(
                                             'reply_text' => __('Reply <span>&darr;</span>', 'essentialswp'),
