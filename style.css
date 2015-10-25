@@ -3,8 +3,8 @@ Theme Name: Essentials WP
 Theme URI: https://github.com/frixelsolutions/essentialswp
 Author: Frixel Solutions LLC.
 Author URI: https://www.frixelsolutions.com/
-Description: Essentials WP is designed to make responsive WordPress sites easier. Feel free to make money off it or rip it apart and make something different. I don't care.
-Version: 1.0.1
+Description: 
+Version: 1.0.2
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 Tags: 
@@ -63,15 +63,23 @@ a:hover {
 	padding-bottom: 10px;
 }
 
-.container-fluid {
-	padding: 0;
+@media all and (min-width: 767px) {
+	.container-fluid {
+		padding: 0;
+	}
+
+	.navbar-collapse {
+		padding: 0;
+	}
 }
 
-.navbar-collapse {
-	padding: 0;
-}
+
 
 /* --- Content --- */
+
+.nocomment {
+	font-style: italic;
+}
 
 /* --- Sidebar --- */
 

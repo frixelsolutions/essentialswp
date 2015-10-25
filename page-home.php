@@ -1,4 +1,4 @@
-<?php /* Template Name: Full Width Page */ ?>
+<?php /* Template Name: Home Page */ ?>
 
 <?php get_header(); ?>
 

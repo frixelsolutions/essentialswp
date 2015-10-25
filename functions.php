@@ -52,7 +52,7 @@ if (!function_exists('essentialswp_comment')) :
                 // Proceed with normal comments.
                 global $post; ?>
 
-                <li class="comment media" id="li-comment-<?php comment_ID(); ?>">
+                <li class="comment media" id="comment-<?php comment_ID(); ?>">
                         <a href="<?php echo $comment->comment_author_url;?>" class="pull-left">
                             <?php echo get_avatar($comment, 64); ?>
                         </a>

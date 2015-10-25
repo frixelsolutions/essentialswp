@@ -1,4 +1,5 @@
-![Essentials Logo](http://i.imgur.com/W2gC9Py.png)
-Bootstrap 3 based WordPress theme
+![EssentialsWP](http://i.imgur.com/VZrv8ek.png)
 
-Get your site up and running with the most popular web-framework of 2015, Bootstrap! This framework is in use with hundreds of sites, and is a great balance of visual appeal, and usability. Use this theme as your base theme, or feel free to iterate upon it, as we've released this code under the MIT license.
+Bootstrap 3 based WordPress theme for developers.
+
+Everything you need to create a responsive client website in WordPress and nothing you don't. Bootstrap 3, commented code, and frequent updates. While it's usable as is, we recommend customizing it to fit your needs. 

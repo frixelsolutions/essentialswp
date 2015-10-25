@@ -34,34 +34,33 @@
 		</div>
 	</div>
 
-	<div id="nav">
-		<nav class="navbar navbar-default">
+	<div id="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="wrapper">
-	        	<div class="container-fluid">
-	        		<div class="navbar-header">
-		            	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-			            	<span class="sr-only">Toggle navigation</span>
-			            	<span class="icon-bar"></span>
-			            	<span class="icon-bar"></span>
-			            	<span class="icon-bar"></span>
-		            	</button>
-	        		</div>
-	        		
-	        			<?php
-				            wp_nav_menu( array(
-				                'menu'              => 'Primary Menu',
-				                'theme_location'    => 'primary-menu',
-				                'depth'             => 2,
-				                'container'         => 'div',
-				                'container_class'   => 'collapse navbar-collapse',
-				        		'container_id'      => '',
-				                'menu_class'        => 'nav navbar-nav',
-				                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-				                'walker'            => new wp_bootstrap_navwalker())
-				            );
-				        ?>
-	        		
-	        	</div><!--/.container-fluid -->
-        	</div>
-        </nav>
+				<div class="container-fluid">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-nav">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				    </div>
+
+			        <?php
+			            wp_nav_menu( array(
+			                'menu'              => 'Primary Menu',
+			                'theme_location'    => 'primary-menu',
+			                'depth'             => 2,
+			                'container'         => 'div',
+			                'container_class'   => 'collapse navbar-collapse',
+			        		'container_id'      => 'responsive-nav',
+			                'menu_class'        => 'nav navbar-nav',
+			                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+			                'walker'            => new wp_bootstrap_navwalker())
+			            );
+			        ?>
+			    </div>
+			</div>
+		</nav>
 	</div>

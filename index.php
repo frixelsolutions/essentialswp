@@ -13,7 +13,9 @@
 	                        Posted on <?php the_time('F jS, Y') ?>
 	                    </p>
 
-	                    <?php the_excerpt(); ?>
+	                    <p class="excerpt"><?php the_excerpt(); ?></p>
+
+	                    <p class="nocomment"><?php echo get_comments_number(); ?> Comments</p>
 
 	                    <hr/>
 	                </div><!-- /.post_class -->
