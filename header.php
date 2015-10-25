@@ -16,6 +16,9 @@
     <![endif]-->
 
 	<title><?php echo get_bloginfo ( 'name' );  ?></title>
+	<link rel="icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon"/>
+
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 
