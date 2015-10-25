@@ -1,0 +1,30 @@
+/*
+Theme Name: Essentials WP
+Theme URI: https://github.com/frixelsolutions/essentialswp
+Author: Frixel Solutions LLC.
+Author URI: https://www.frixelsolutions.com/
+Description: Essentials WP is designed to make responsive WordPress sites easier. Feel free to make money off it or rip it apart and make something different. I don't care.
+Version: 1.0.0
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Tags: 
+Text Domain: essentialswp
+*/
+
+/* --- Fonts --- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700);
+
+* {
+	font-family: 'Open Sans',sans-serif;
+}
+
+/* --- General Styles --- */
+
+/* --- Wrapper --- */
+
+.wrapper {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
