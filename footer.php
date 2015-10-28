@@ -1,11 +1,14 @@
+</div><!-- .wrapper -->
 	<div id="footer">
-		<div class="row">
-			<div class="col-md-12">
-				<p>Copyright &copy; 2015 <?php echo get_bloginfo ( 'name' );  ?></p>
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright &copy; 2015 <?php echo get_bloginfo ( 'name' );  ?></p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div><!-- .wrapper -->
+
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

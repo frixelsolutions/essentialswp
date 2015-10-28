@@ -4,7 +4,7 @@ Theme URI: https://github.com/frixelsolutions/essentialswp
 Author: Frixel Solutions LLC.
 Author URI: https://www.frixelsolutions.com/
 Description:
-Version: 1.0.2
+Version: 1.0.3
 License: MIT
 License URI: http://opensource.org/licenses/MIT
 Tags:
@@ -29,6 +29,10 @@ a {
 a:hover {
 	color: #01579B;
 	text-decoration: none;
+}
+
+.clear {
+	clear: both;
 }
 
 /* --- Wrapper --- */
@@ -73,13 +77,14 @@ a:hover {
 	}
 }
 
+/* --- Footer --- */
 
-
-/* --- Content --- */
-
-.nocomment {
-	font-style: italic;
+#footer {
+	border-top: 2px solid #E7E7E7;
+	padding-top: 7px;
 }
+
+
 
 /* --- Sidebar --- */
 
@@ -93,6 +98,32 @@ a:hover {
 #sidebar li {
 	padding-top: 5px;
 	padding-bottom: 5px;
+}
+
+/* --- Content --- */
+
+.nocomment {
+	font-style: italic;
+}
+
+.content hr {
+	border: 1px solid #E7E7E7;
+}
+
+.h3-thick {
+	border-top: 3px solid #111111 !important;
+}
+
+.nav-prev {
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.nav-next {
+	float: right;
+	margin-left: 5px;
+	margin-bottom: 5px;
 }
 
 /* --- Comments --- */
