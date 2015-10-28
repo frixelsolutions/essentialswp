@@ -13,6 +13,42 @@ function widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 
+    register_sidebar( array(
+        'name'          => 'Header',
+        'id'            => 'header-widget',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Footer 1',
+        'id'            => 'footer-1-widget',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Footer 2',
+        'id'            => 'footer-2-widget',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => 'Footer 3',
+        'id'            => 'footer-3-widget',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ) );
+
 }
 
 add_action( 'widgets_init', 'widgets_init' );
@@ -28,13 +64,14 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 
-/**
- * Display template for comments and pingbacks.
- *
- */
+/* --- Comments --- */
+
+
+
 if (!function_exists('essentialswp_comment')) :
     function essentialswp_comment($comment, $args, $depth)
     {
+
         $GLOBALS['comment'] = $comment;
         switch ($comment->comment_type) :
             case 'pingback' :
@@ -101,6 +138,9 @@ if (!function_exists('essentialswp_comment')) :
     }
 endif;
 
+/* --- WooCommerce --- */
+
+add_theme_support( 'woocommerce' );
 
 
 

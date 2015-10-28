@@ -16,6 +16,14 @@
 
 	                    <?php the_content(); ?>
 
+	                    <br/>
+	                    <div class="navigation">
+	                    	<div class="nav-prev"><p><?php previous_post_link(); ?></p></div>
+	                    	<div class="nav-next"><p><?php next_post_link(); ?></p></div>
+	                    </div>
+
+	                    <div class="clear"></div>
+
 	                    
 
 	                </div><!-- /.post_class -->
@@ -24,8 +32,6 @@
 	            <h3><?php echo get_comments_number(); ?> Comments</h3><hr/>
 
 	            <?php comments_template(); ?>
-
-	            <hr/>
 
 			</div>
 			

@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-8">
 			<div class="content">
-				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<?php while (have_posts()) : the_post();  ?>
 	                <div <?php post_class(); ?>>
 	                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 	                        <h3><?php the_title();?></h3>
@@ -19,7 +19,16 @@
 
 	                    <hr/>
 	                </div><!-- /.post_class -->
-	            <?php endwhile; endif; ?>
+	            <?php endwhile; ?>
+
+	            <div class="navigation">
+                	<div class="nav-prev"><p><?php next_posts_link( '&laquo; Older posts' ); ?></div>
+					<div class="nav-next"><p><?php previous_posts_link( 'Newer posts &raquo;' ); ?></div>
+                </div>
+
+                <div class="clear"></div>
+
+
 			</div>
 			
 		</div>
