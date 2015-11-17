@@ -1,4 +1,5 @@
 <div id="comments" class="comments-area">
+
     <?php if (have_comments()) : ?>
 
         <ul class="media-list">

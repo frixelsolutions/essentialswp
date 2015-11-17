@@ -23,12 +23,20 @@
 </head>
 
 <body>
-	<div class="wrapper">
-		<div id="header">
+	
+	<div id="header">
+		<div class="wrapper">
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-8">
 					<a href="<?php echo get_bloginfo('url'); ?>"><h1><?php echo get_bloginfo('name'); ?></h1></a>
 					<h2><?php echo get_bloginfo ( 'description' );  ?></h2>
+				</div>
+				<div class="col-md-4">
+					<?php if ( is_active_sidebar( 'header-widget' ) ) : ?>
+					<div id="header-widget" class="header-widget widget-area" role="complementary">
+						<?php dynamic_sidebar( 'header-widget' ); ?>
+					</div><!-- #sidebar -->
+				<?php endif; ?>
 				</div>
 			</div>
 		</div>

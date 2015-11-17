@@ -47,14 +47,18 @@ a:hover {
 
 /* --- Header --- */
 
+#header {
+	background: #0277BD;
+}
+
 #header a {
 	text-decoration: none;
-	color: #111111;
+	color: #FFFFFF;
 }
 
 #header a:hover {
 	text-decoration: none;
-	color: #000000;
+	color: #F8F8F8;
 }
 
 #header h1 {
@@ -65,7 +69,13 @@ a:hover {
 #header h2 {
 	font-size: 18px;
 	padding-bottom: 10px;
+	color: #FFFFFF;
 }
+
+#header-widget {
+	margin-top: 26px;
+}
+
 
 @media all and (min-width: 767px) {
 	.container-fluid {
@@ -79,14 +89,71 @@ a:hover {
 
 /* --- Footer --- */
 
+<<<<<<< HEAD
+#footer1 {
+	border-top: 2px solid #E7E7E7;
+	padding-bottom: 20px;
+}
+
+#footer1 a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#footer1 a:hover {
+	text-decoration: none;
+	color: #F8F8F8;
+}
+
+#footer1 h2 {
+	font-size: 18px;
+	padding-bottom: 10px;
+	color: #FFFFFF;
+}
+
+#footer1 ul {
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#footer1 li {
+	border-top: #FFFFFF 1px dashed;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#footer1 li:nth-of-type(1) {
+	border-top: none;
+}
+
+#footer2 {
+	padding-top: 9px;
+	color: #FFFFFF;
+}
+
+.styled-footer:nth-of-type(1) {
+	background: #0277BD;
+}
+
+.styled-footer:nth-of-type(2) {
+	background: #01579B;
+}
+=======
 #footer {
 	border-top: 2px solid #E7E7E7;
 	padding-top: 7px;
 }
 
 
+>>>>>>> refs/remotes/origin/master
 
 /* --- Sidebar --- */
+
+#sidebar {
+	margin-bottom: 20px;
+}
 
 #sidebar ul {
 	list-style: none;
