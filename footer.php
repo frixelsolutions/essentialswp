@@ -1,5 +1,6 @@
 </div><!-- .wrapper -->
 	<div id="footer">
+<<<<<<< HEAD
 		<?php if ( is_active_sidebar( 'footer-1-widget' ) ) : ?>
 			<div id="footer1" class="styled-footer">
 				<div class="wrapper">
@@ -35,6 +36,12 @@
 					<div class="col-md-12">
 						<p>Copyright &copy; 2015 <?php echo get_bloginfo ( 'name' );  ?></p>
 					</div>
+=======
+		<div class="wrapper">
+			<div class="row">
+				<div class="col-md-12">
+					<p>Copyright &copy; 2015 <?php echo get_bloginfo ( 'name' );  ?></p>
+>>>>>>> refs/remotes/origin/master
 				</div>
 			</div>
 		</div>

@@ -89,6 +89,7 @@ a:hover {
 
 /* --- Footer --- */
 
+<<<<<<< HEAD
 #footer1 {
 	border-top: 2px solid #E7E7E7;
 	padding-bottom: 20px;
@@ -139,6 +140,14 @@ a:hover {
 .styled-footer:nth-of-type(2) {
 	background: #01579B;
 }
+=======
+#footer {
+	border-top: 2px solid #E7E7E7;
+	padding-top: 7px;
+}
+
+
+>>>>>>> refs/remotes/origin/master
 
 /* --- Sidebar --- */
 
