@@ -15,7 +15,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<title><?php echo get_bloginfo ( 'name' );  ?></title>
+	<title><?php the_title();?> - <?php echo get_bloginfo ( 'name' );  ?></title>
 	<link rel="icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon"/>
 	<link rel="shortcut icon" href="<?php echo get_bloginfo('template_url'); ?>/img/favicon.ico" type="image/x-icon"/>
 

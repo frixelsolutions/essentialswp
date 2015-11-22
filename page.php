@@ -6,12 +6,7 @@
 			<div class="content">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	                <div <?php post_class(); ?>>
-	                    <a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
-	                        <h3><?php the_title();?></h3>
-	                    </a>
-	                    <p class="meta">
-	                        Posted on <?php the_time('F jS, Y') ?>
-	                    </p>
+	                    <h3><?php the_title();?></h3>
 
 	                    <?php the_content(); ?>
 
